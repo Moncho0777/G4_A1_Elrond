@@ -1,3 +1,18 @@
+import java.util.Scanner;
+public class Proyeccion_lectura_Colaborativo
+{
+	public static void main(String Args[])
+	{
+		System.out.println("Escuela de Administración de Negocios");
+		System.out.println("Guía No. 1 Actividad 3");
+		System.out.println("Proyecto en Grupo");
+		System.out.println("Poyeccion de Lectura de un libro");
+		System.out.println();
+		
+		Proyeccion_lectura_Colaborativo pl = new Proyeccion_lectura_Colaborativo();
+		pl.solicitarDatos();
+	}
+
 public static void solicitarDatos()
 	{
 		
