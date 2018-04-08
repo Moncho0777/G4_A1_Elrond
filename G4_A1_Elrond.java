@@ -20,3 +20,31 @@ public static void solicitarDatos()
 		System.out.println("El tiempo de lectura estimado será de: "+tiempo+" días.");
 		System.out.println("Presupueste el tiempo y difrite la lectura. :)");
 	}
+
+public static double calcularLectura(int a, int b)
+	{
+		double tiempoLectura = 0;
+		if (a<6) 
+		{
+			switch (a) 
+			{
+				case 1: tiempoLectura = (double) 606/b;
+				break;
+				case 2: tiempoLectura = (double) 704/b;
+				break;
+				case 3: tiempoLectura = (double) 650/b;
+				break;
+				case 4: tiempoLectura = (double) 720/b;
+				break;
+				case 5: tiempoLectura = (double) 690/b;
+				break;
+			}
+		}
+		else
+		{
+			System.out.println("Digito un codigo de libro errado");
+			// solicitarDatos();
+			System.exit(0);
+		}
+		return tiempoLectura;
+	}
